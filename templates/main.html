@@ -9,68 +9,95 @@
 
 </head>
 <body>
-    <h1>{{name}}</h1>
-    <div class = "room1">
-       <form action="/room1on" method= "post">
-            <button type="submit">Turn on</button>
+    
+    <div class="divone">
+       <h5>Room 1</h5>
+        <form action="/room1on" method= "post">
+            <button type="submit" class="button_on">Turn on</button>
         </form>
 
         <form action="/room1off" method="POST">
-            <button type="submit">Turn off</button>
+            <button type="submit" class="button_off">Turn off</button>
         </form>
     </div>
 
-    <div>
+    <div class="divtwo">
+        <h5>Room 2</h5>
         <form action="/room2on" method= "post">
-            <button type="submit">Turn on</button>
+            <button type="submit" class="button_on">Turn on</button>
         </form>
  
         <form action="/room2off" method="POST">
-            <button type="submit">Turn off</button>
+            <button type="submit" class="button_off">Turn off</button>
         </form>
     </div>
 
-    <div>
+    <div class="divthree">
+        <h5>Room 3</h5>
         <form action="/room3on" method= "post">
-            <button type="submit">Turn on</button>
+            <button type="submit" class="button_on">Turn on</button>
         </form>
  
         <form action="/room3off" method="POST">
-            <button type="submit">Turn off</button>
+            <button type="submit" class="button_off">Turn off</button>
         </form>
     </div>
     
-    <div class = "living">
+    <div class = "divliving">
+        <h5>Living Room</h5>
         <form action="/livingon" method= "post">
-             <button type="submit">Turn on</button>
+             <button type="submit" class="button_on">Turn on</button>
          </form>
  
          <form action="/livingoff" method="POST">
-             <button type="submit">Turn off</button>
+             <button type="submit" class="button_off">Turn off</button>
          </form>
      </div>
  
-     <div>
-         <form action="/kitchenon" method= "post">
-             <button type="submit">Turn on</button>
+     <div class="divkitchen">
+        <h5>Kitchen</h5> 
+        <form action="/kitchenon" method= "post">
+             <button type="submit" class="button_on">Turn on</button>
          </form>
   
          <form action="/kitchenoff" method="POST">
-             <button type="submit">Turn off</button>
+             <button type="submit" class="button_off">Turn off</button>
          </form>
      </div>
  
-     <div>
-         <form action="/garageon" method= "post">
-             <button type="submit">Turn on</button>
+     <div class="divgarage">
+        <h5>Garage</h5> 
+        <form action="/garageon" method= "post">
+             <button type="submit" class="button_on">Turn on</button>
          </form>
   
          <form action="/garageoff" method="POST">
-             <button type="submit">Turn off</button>
+             <button type="submit" class="button_off">Turn off</button>
          </form>
      </div>  
      
+     <div class="divtvone">
+        <h5>Tv #1</h5>
+        <form action="/tv1on" method= "post">
+            <button type="submit" class="button_on">Turn on</button>
+        </form>
+ 
+        <form action="/tv1off" method="POST">
+            <button type="submit" class="button_off">Turn off</button>
+        </form>
+    </div>
 
+    <div class="divtvtwo">
+        <h5>Tv #2</h5>
+        <form action="/tv2on" method= "post">
+            <button type="submit" class="button_on">Turn on</button>
+        </form>
+ 
+        <form action="/tv2off" method="POST">
+            <button type="submit" class="button_off">Turn off</button>
+        </form>
+    </div>  
+    <h1>{{name}}</h1>
 
 </body>
 </html>

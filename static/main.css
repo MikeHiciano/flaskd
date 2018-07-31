@@ -1,6 +1,97 @@
-.room1
+h1
 {
-    color: blue;
-    position: static;
-    border: 40px; 
+    color: whitesmoke;
+}
+
+h5
+{
+    color: white;
+}
+
+body
+{
+    background-color: rgb(140, 140, 160);
+}
+
+.button_on
+{
+    color:green;
+}
+
+.button_off
+{
+    color: red;
+}
+
+
+
+.divone
+{
+   position: absolute;
+   top: 100px;
+   bottom: 100px;
+   left: 0px;
+   right: 0;
+}
+
+.divtwo
+{
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    left: 150px;
+    right: 0px;
+}
+
+.divthree
+{
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    left: 300px;
+}
+
+.divliving
+{
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    left: 450px;
+    right: 0;
+}
+
+.divtvone
+{
+    position: absolute;
+    top: 220px;
+    bottom: 100px;
+    left: 300px;
+    right: 0px;
+}
+
+.divtvtwo
+{
+    position: absolute;
+    top: 220px;
+    bottom: 100px;
+    left: 450px;
+    right: 0px;
+}
+
+.divgarage
+{
+    position: absolute;
+    top: 220px;
+    bottom: 100px;
+    left: 150px;
+    right: 0px;
+}
+
+.divkitchen
+{
+    position: absolute;
+    top: 220px;
+    bottom: 100px;
+    left: 0px;
+    right: 0px;
 }
