@@ -1,12 +1,9 @@
 '''
-    Hasta ahora funcionan 3 habitaciones
+     Codigo adaptado para la raspberry pi
 
-    things to do:
+    este codigo es exclusivamente para la funcion de backend
+    para casa domotica.
 
-    -adaptar codigo para raspberry pi
-    -anadir demas parametros
-    -mejorar la estetica
-    
 '''
 from flask import Flask ,render_template , url_for, request
 import RPi.GPIO as GPIO
@@ -25,7 +22,7 @@ salidas = [room1,room2,room3,living,kitchen,garage,tv1,tv2]
 
 GPIO.setmode(GPIO.BCM)
 
-for i in range(7):
+for i in range(8):
     GPIO.setup(salidas[i],GPIO.OUT)
 
 app = Flask(__name__)

@@ -1,11 +1,6 @@
 '''
-    Hasta ahora funcionan 3 habitaciones
-
-    things to do:
-
-    -adaptar codigo para raspberry pi
-    -anadir demas parametros
-    -mejorar la estetica
+    Programa para pruebas de backend fuera de cualquier
+    raspberry pi
     
 '''
 from flask import Flask ,render_template , url_for, request
@@ -97,4 +92,4 @@ def tvtwooff():
         return render_template("main.html", name=name)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug = "True", host = "0.0.0.0")
