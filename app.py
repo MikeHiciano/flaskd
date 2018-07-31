@@ -46,5 +46,55 @@ def room3off():
         name = "Room 3 off!"
         return render_template("main.html", name=name)
 
+@app.route('/kitchenon', methods=["POST"])
+def kitchenon():
+        name = "Kitchen on!"
+        return render_template("main.html", name=name)
+
+@app.route('/kitchenoff', methods=["POST"])
+def kitchenoff():
+        name = "Kitchen off!"
+        return render_template("main.html", name=name)
+
+@app.route('/livingon', methods=["POST"])
+def livingon():
+        name = "Living room on!"
+        return render_template("main.html", name=name)
+
+@app.route('/livingoff', methods=["POST"])
+def livingoff():
+        name = "Living room off!"
+        return render_template("main.html", name=name)
+
+@app.route('/garageon', methods=["POST"])
+def garageon():
+        name = "Garage on!"
+        return render_template("main.html", name=name)
+
+@app.route('/garageoff', methods=["POST"])
+def garageoff():
+        name = "Garage off!"
+        return render_template("main.html", name=name)
+
+@app.route('/tv1on', methods=["POST"])
+def tvoneon():
+        name = "TV #1 on!"
+        return render_template("main.html", name=name)
+
+@app.route('/tv1off', methods=["POST"])
+def tvoneoff():
+        name = "TV #1 off!"
+        return render_template("main.html", name=name)
+
+@app.route('/tv2on', methods=["POST"])
+def tvtwoon():
+        name = "TV #2 on!"
+        return render_template("main.html", name=name)
+
+@app.route('/tv2off', methods=["POST"])
+def tvtwooff():
+        name = "TV #2 off!"
+        return render_template("main.html", name=name)
+
 if __name__ == '__main__':
     app.run()
