@@ -31,41 +31,41 @@ app = Flask(__name__)
 def hello():
         return render_template('main.html')
 
-@app.route('/room1on', methods=["POST"])
+@app.route('/maindooropen', methods=["POST"])
 def room1on():
-        name = "Room 1 on!"
+        name = "Main Door Open!"
         GPIO.output(room1,GPIO.HIGH)
         return render_template("main.html", name=name)
         
 
-@app.route('/room1off', methods=["POST"])
+@app.route('/maindoorclosed', methods=["POST"])
 def room1off():
-        name = "Room 1 off!"
+        name = "Main Door Closed!"
         GPIO.output(room1,GPIO.LOW)
         return render_template("main.html", name=name)
         
 
-@app.route('/room2on', methods=["POST"])
+@app.route('/bedroomdooropen', methods=["POST"])
 def room2on():
-        name = "Room 2 on!"
+        name = "Bedroom Door Open"
         GPIO.output(room2,GPIO.HIGH)
         return render_template("main.html", name=name)
 
-@app.route('/room2off', methods=["POST"])
+@app.route('/bedroomdoorclosed', methods=["POST"])
 def room2off():
-        name = "Room 2 off!"
+        name = "Bedroom Door Closed"
         GPIO.output(room2,GPIO.LOW)
         return render_template("main.html", name=name)
 
-@app.route('/room3on', methods=["POST"])
+@app.route('/bedroomlighton', methods=["POST"])
 def room3on():
-        name = "Room 3 on!"
+        name = "Bedroom Light on!"
         GPIO.output(room3,GPIO.HIGH)
         return render_template("main.html", name=name)
 
-@app.route('/room3off', methods=["POST"])
+@app.route('/bedroomlightoff', methods=["POST"])
 def room3off():
-        name = "Room 3 off!"
+        name = "Bedroom Light off!"
         GPIO.output(room3,GPIO.LOW)
         return render_template("main.html", name=name)
 
